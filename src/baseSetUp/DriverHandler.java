@@ -65,6 +65,4 @@ public class DriverHandler {
 		activeDriver = null;
 	}
 	
-	
-	
 }
