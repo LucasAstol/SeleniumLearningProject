@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2514" started-at="2018-11-03T17:01:05Z" finished-at="2018-11-03T17:01:07Z">
+  <suite name="Default suite" duration-ms="4822" started-at="2018-11-21T11:40:48Z" finished-at="2018-11-21T11:40:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2514" started-at="2018-11-03T17:01:05Z" finished-at="2018-11-03T17:01:07Z">
+    <test name="Default test" duration-ms="4822" started-at="2018-11-21T11:40:48Z" finished-at="2018-11-21T11:40:53Z">
       <class name="common.tests.GoogleHomeTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:common.tests.GoogleHomeTest@387a8303]" name="initialize" is-config="true" duration-ms="10" started-at="2018-11-03T17:01:05Z" finished-at="2018-11-03T17:01:05Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:common.tests.GoogleHomeTest@4dc27487]" name="initialize" is-config="true" duration-ms="12" started-at="2018-11-21T11:40:48Z" finished-at="2018-11-21T11:40:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testSearchClickingSearchOnGoogle()[pri:0, instance:common.tests.GoogleHomeTest@387a8303]" name="testSearchClickingSearchOnGoogle" duration-ms="1824" started-at="2018-11-03T17:01:05Z" description="Verifies that results page is displyed when doing search" finished-at="2018-11-03T17:01:06Z">
+        <test-method status="PASS" signature="testSearchClickingSearchOnGoogle()[pri:0, instance:common.tests.GoogleHomeTest@4dc27487]" name="testSearchClickingSearchOnGoogle" duration-ms="2458" started-at="2018-11-21T11:40:48Z" description="Verifies that results page is displyed when doing search" finished-at="2018-11-21T11:40:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchClickingSearchOnGoogle -->
-        <test-method status="PASS" signature="terminate()[pri:0, instance:common.tests.GoogleHomeTest@387a8303]" name="terminate" is-config="true" duration-ms="661" started-at="2018-11-03T17:01:06Z" finished-at="2018-11-03T17:01:07Z">
+        <test-method status="PASS" signature="terminate()[pri:0, instance:common.tests.GoogleHomeTest@4dc27487]" name="terminate" is-config="true" duration-ms="2330" started-at="2018-11-21T11:40:50Z" finished-at="2018-11-21T11:40:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->

@@ -25,7 +25,7 @@ public class DriverHandler {
 	
 	private static void setDriver() {
 		
-		activeDriver = initFirefoxDriver();
+		activeDriver = initChromeDriver();
 		activeDriver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MINUTES);
 		activeDriver.manage().window().maximize();
 	}
@@ -61,10 +61,8 @@ public class DriverHandler {
 		} else {
 			activeDriver.close();
 		}
-				
+		
 		activeDriver = null;
 	}
-	
-	
 	
 }

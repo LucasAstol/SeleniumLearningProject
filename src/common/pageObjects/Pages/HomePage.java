@@ -1,9 +1,11 @@
 package common.pageObjects.Pages;
 
 import org.openqa.selenium.By;
+
+import common.pageObjects.BasePage;
 import common.pageObjects.Elements.*;
 
-public class HomePage {
+public class HomePage extends BasePage{
 	
 	public HomePage() {
 		super();
@@ -11,12 +13,12 @@ public class HomePage {
 	
 	public Button buttonSubmit() {
 		
-		return new Button(By.cssSelector("input[name='btnK']"));
+		return new Button(By.cssSelector("div.FPdoLc.VlcLAe input[name='btnK']"));
 	}
 	
 	public InputField inputSearch(){
 		
-		return new InputField(By.id("lst-ib"));
+		return new InputField(By.cssSelector("input.gLFyf.gsfi"));
 	}
 	
 

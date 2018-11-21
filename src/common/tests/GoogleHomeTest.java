@@ -22,5 +22,7 @@ public class GoogleHomeTest extends BaseTest {
 		ResultsPage results = new ResultsPage();
 		Assert.assertTrue(results.labelResultsStats().text().contains("resultados"), "Results page is not displayed");		
 	}
+	
+	
 
 }
