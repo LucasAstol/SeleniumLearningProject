@@ -1,9 +1,10 @@
-package common.tests;
+package test.java;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import common.pageObjects.Pages.HomePage;
 import common.pageObjects.Pages.ResultsPage;
+import common.tests.BaseTest;
 
 public class GoogleHomeTest extends BaseTest {
 	

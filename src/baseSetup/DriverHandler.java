@@ -29,6 +29,7 @@ public class DriverHandler {
 		activeDriver.manage().window().maximize();
 	}
 	
+	//The idea is to have the ability of determining the driver to use from a config and set it from setDriver() method
 	private static WebDriver initFirefoxDriver() {
 		
 		System.out.println("Launching Firefox driver");
@@ -52,7 +53,7 @@ public class DriverHandler {
 		return driver;	
 	}
 	
-	public static void terminateDriver () {
+	public static void terminateDriver() {
 		
 		if(getDriver().getWindowHandles().size() > 1) {
 			activeDriver.quit();
