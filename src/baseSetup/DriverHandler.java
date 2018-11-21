@@ -1,4 +1,4 @@
-package baseSetUp;
+package baseSetup;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-
 
 
 public class DriverHandler {
@@ -50,7 +49,6 @@ public class DriverHandler {
 		options.addArguments("disable-infobars");
 		
 		WebDriver driver = new ChromeDriver(options);
-		
 		return driver;	
 	}
 	

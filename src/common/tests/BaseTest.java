@@ -1,7 +1,8 @@
 package common.tests;
 
 import org.testng.annotations.*;
-import baseSetUp.DriverHandler;
+
+import baseSetup.DriverHandler;
 
 
 public class BaseTest {

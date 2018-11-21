@@ -2,7 +2,7 @@ package common.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
-import baseSetUp.DriverHandler;
+import baseSetup.DriverHandler;
 
 public class BasePage { 
 	

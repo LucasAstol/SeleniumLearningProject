@@ -2,8 +2,9 @@ package common.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import baseSetUp.DriverMethods;
-import baseSetUp.ElementMethods;
+
+import baseSetup.DriverMethods;
+import baseSetup.ElementMethods;
 
 public class BaseElement {
 	
