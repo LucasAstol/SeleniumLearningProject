@@ -1,4 +1,4 @@
-package baseSetUp;
+package baseSetup;
 
 import java.util.List;
 

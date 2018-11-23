@@ -1,4 +1,4 @@
-package baseSetUp;
+package baseSetup;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +25,5 @@ public class ElementMethods {
 		
 		return ExpectedConditions.visibilityOfElementLocated(locator) != null;
 	}
-	
-	
 	
 }

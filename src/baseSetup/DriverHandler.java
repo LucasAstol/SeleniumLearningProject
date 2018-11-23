@@ -1,4 +1,4 @@
-package baseSetUp;
+package baseSetup;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-
 
 
 public class DriverHandler {
@@ -25,11 +24,12 @@ public class DriverHandler {
 	
 	private static void setDriver() {
 		
-		activeDriver = initFirefoxDriver();
+		activeDriver = initChromeDriver();
 		activeDriver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MINUTES);
 		activeDriver.manage().window().maximize();
 	}
 	
+	//The idea is to have the ability of determining the driver to use from a config and set it from setDriver() method
 	private static WebDriver initFirefoxDriver() {
 		
 		System.out.println("Launching Firefox driver");
@@ -50,18 +50,17 @@ public class DriverHandler {
 		options.addArguments("disable-infobars");
 		
 		WebDriver driver = new ChromeDriver(options);
-		
 		return driver;	
 	}
 	
-	public static void terminateDriver () {
+	public static void terminateDriver() {
 		
 		if(getDriver().getWindowHandles().size() > 1) {
 			activeDriver.quit();
 		} else {
 			activeDriver.close();
 		}
-				
+		
 		activeDriver = null;
 	}
 	
