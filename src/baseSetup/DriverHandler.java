@@ -5,9 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.*;
 
 
 public class DriverHandler {
@@ -18,7 +16,7 @@ public class DriverHandler {
 		
 		if (activeDriver == null) {
 			setDriver();
-		}
+		}		
 		return activeDriver;
 	}
 	
@@ -29,7 +27,7 @@ public class DriverHandler {
 		activeDriver.manage().window().maximize();
 	}
 	
-	//The idea is to have the ability of determining the driver to use from a config and set it from setDriver() method
+	//The idea is to have the ability of determining the driver to use from a config file and set it from setDriver() method
 	private static WebDriver initFirefoxDriver() {
 		
 		System.out.println("Launching Firefox driver");
@@ -37,7 +35,6 @@ public class DriverHandler {
 		FirefoxProfile ffProfile = new FirefoxProfile();
 		ffProfile.setAcceptUntrustedCertificates(true);
 		FirefoxOptions ffOptions = new FirefoxOptions().setProfile(ffProfile);
-		
 		WebDriver driver = new FirefoxDriver(ffOptions);
 		return driver;
 	}
@@ -48,20 +45,17 @@ public class DriverHandler {
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
-		
 		WebDriver driver = new ChromeDriver(options);
-		return driver;	
+		return driver;
 	}
 	
 	public static void terminateDriver() {
 		
-		if(getDriver().getWindowHandles().size() > 1) {
+		if (activeDriver!= null) {
+			
 			activeDriver.quit();
-		} else {
-			activeDriver.close();
+			activeDriver = null;	
 		}
-		
-		activeDriver = null;
 	}
 	
 }

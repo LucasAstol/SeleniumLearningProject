@@ -1,25 +1,30 @@
 package common.tests;
 
-import org.testng.annotations.*;
-
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import baseSetup.DriverHandler;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class BaseTest {
 	
-	public BaseTest() {
-		
-		DriverHandler.getDriver()
-		.navigate()
-		.to("https://www.google.com/");
-	}
-	
 	@BeforeClass
-	public void initialize() {
+	public void driversSetup() {
 		
+		WebDriverManager.firefoxdriver().setup();
+		WebDriverManager.chromedriver().setup();
 	}
 	
-	@AfterClass
+	@BeforeMethod
+	public void initialize() {
+	DriverHandler.getDriver()
+		.navigate()
+		.to("https://www.google.com/");	
+	}
+	
+		
+	@AfterMethod
 	public void terminate() {
 		
 		DriverHandler.terminateDriver();
