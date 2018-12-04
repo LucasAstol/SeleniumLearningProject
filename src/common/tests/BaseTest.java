@@ -22,7 +22,6 @@ public class BaseTest {
 		.navigate()
 		.to("https://www.google.com/");	
 	}
-	
 		
 	@AfterMethod
 	public void terminate() {
