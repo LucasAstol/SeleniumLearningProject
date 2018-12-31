@@ -5,7 +5,6 @@
     <classes>
       <class name="test.java.LoginTests">
         <methods>
-          <include name="testSearchClickingSearchOnGoogle"/>
           <include name="driversSetup"/>
           <include name="initialize"/>
           <include name="terminate"/>

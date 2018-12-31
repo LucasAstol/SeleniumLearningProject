@@ -6,13 +6,13 @@ import common.pageObjects.Pages.HomePage;
 import common.pageObjects.Pages.Popup;
 import common.tests.BaseTest;
 
-public class LoginTests extends BaseTest {
+public class LoginTest extends BaseTest {
 	
 	private HomePage home = new HomePage();
 	
 	@Test (description = "Verifies that error is thrown when trying to login with incorrect credentials", 
 			testName = "Unsuccessful login with incorrect credentials ")
-	public void testSearchClickingSearchOnGoogle() {
+	public void loginWithInvalidCredentials() {
 		
 		Assert.assertTrue(home.inputPassword().isVisible(), "Banc Sabadell home page is not displayed");
 		

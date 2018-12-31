@@ -13,7 +13,7 @@ public class HomePage extends BasePage{
 	
 	public InputField inputUserDNI() {
 		
-		return new InputField(By.cssSelector("#usuarioNoConectado input[name='userDNI']"));
+		return new InputField(By.cssSelector("#usuarioNoConectado #input-placeholder"));
 	}
 	
 	public InputField inputPassword(){

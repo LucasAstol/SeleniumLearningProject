@@ -16,7 +16,6 @@ public class BaseElement {
 	
 	public WebElement getWebElement() {
 		
-		this.locator = By.className("sdfs");
 		return DriverMethods.findElementWait(locator);
 	}
 	

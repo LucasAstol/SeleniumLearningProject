@@ -7,11 +7,7 @@ import baseSetup.DriverHandler;
 
 public class BasePage { 
 	
-	protected By locator = null;
-	
 	public BasePage() {};
-	
-	public BasePage(By by) {};
 	
 	public WebDriver getDriver() {
 		
