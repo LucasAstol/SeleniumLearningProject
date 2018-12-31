@@ -20,7 +20,7 @@ public class BaseTest {
 	public void initialize() {
 	DriverHandler.getDriver()
 		.navigate()
-		.to("https://www.google.com/");	
+		.to("https://www.bancsabadell.com/cs/Satellite/SabAtl/");	
 	}
 		
 	@AfterMethod

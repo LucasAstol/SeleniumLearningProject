@@ -11,15 +11,21 @@ public class HomePage extends BasePage{
 		super();
 	}
 	
-	public Button buttonSubmit() {
+	public InputField inputUserDNI() {
 		
-		return new Button(By.cssSelector("div.FPdoLc.VlcLAe input[name='btnK']"));
+		return new InputField(By.cssSelector("#usuarioNoConectado input[name='userDNI']"));
 	}
 	
-	public InputField inputSearch(){
+	public InputField inputPassword(){
 		
-		return new InputField(By.cssSelector("input.gLFyf.gsfi"));
+		return new InputField(By.cssSelector("#usuarioNoConectado input[name='pinDNI']"));
+	}
+	
+	public Button buttonEnter(){
+		
+		return new Button(By.cssSelector("#usuarioNoConectado input.bs-login"));
 	}
 	
 
 }
+

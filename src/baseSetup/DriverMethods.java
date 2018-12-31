@@ -11,11 +11,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverMethods {
 	
-	private static final long waitTimeout = 60;
+	private static final long WAIT_TIMEOUT = 60;
 	
 	public static WebElement findElementWait(By locator) {
 				
-		WebElement element = (new WebDriverWait(DriverHandler.getDriver(), waitTimeout)
+		WebElement element = (new WebDriverWait(DriverHandler.getDriver(), WAIT_TIMEOUT)
 				.until(ExpectedConditions.presenceOfElementLocated(locator)));
 		
 		return element;
@@ -23,7 +23,7 @@ public class DriverMethods {
 	
 	public static List<WebElement> findElementsWait(By locator) {
 		
-		List<WebElement> elements = (new WebDriverWait(DriverHandler.getDriver(), waitTimeout)
+		List<WebElement> elements = (new WebDriverWait(DriverHandler.getDriver(), WAIT_TIMEOUT)
 				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator)));
 		
 		return elements;

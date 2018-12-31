@@ -1,57 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27842" started-at="2018-11-28T16:18:55Z" finished-at="2018-11-28T16:19:23Z">
+  <suite name="Default suite" duration-ms="102372" started-at="2018-12-31T11:43:22Z" finished-at="2018-12-31T11:45:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27842" started-at="2018-11-28T16:18:55Z" finished-at="2018-11-28T16:19:23Z">
-      <class name="test.java.GoogleHomeTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:test.java.GoogleHomeTest@31d7b7bf]" name="initialize" is-config="true" duration-ms="5631" started-at="2018-11-28T16:18:55Z" finished-at="2018-11-28T16:19:00Z">
+    <test name="Default test" duration-ms="102372" started-at="2018-12-31T11:43:22Z" finished-at="2018-12-31T11:45:05Z">
+      <class name="test.java.LoginTests">
+        <test-method status="PASS" signature="driversSetup()[pri:0, instance:test.java.LoginTests@77caeb3e]" name="driversSetup" is-config="true" duration-ms="6466" started-at="2018-12-31T11:43:22Z" finished-at="2018-12-31T11:43:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driversSetup -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:test.java.LoginTests@77caeb3e]" name="initialize" is-config="true" duration-ms="34643" started-at="2018-12-31T11:43:29Z" finished-at="2018-12-31T11:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="blabla()[pri:0, instance:test.java.GoogleHomeTest@31d7b7bf]" name="blabla" duration-ms="13145" started-at="2018-11-28T16:19:00Z" description="Verifies that results page is displyed when doing search" finished-at="2018-11-28T16:19:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blabla -->
-        <test-method status="PASS" signature="terminate()[pri:0, instance:test.java.GoogleHomeTest@31d7b7bf]" name="terminate" is-config="true" duration-ms="691" started-at="2018-11-28T16:19:14Z" finished-at="2018-11-28T16:19:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminate -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:test.java.GoogleHomeTest@31d7b7bf]" name="initialize" is-config="true" duration-ms="5055" started-at="2018-11-28T16:19:14Z" finished-at="2018-11-28T16:19:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="testSearchClickingSearchOnGoogle()[pri:0, instance:test.java.GoogleHomeTest@31d7b7bf]" name="testSearchClickingSearchOnGoogle" duration-ms="2555" started-at="2018-11-28T16:19:19Z" description="Verifies that results page is displyed when doing search" finished-at="2018-11-28T16:19:22Z">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
+        <test-method status="FAIL" signature="testSearchClickingSearchOnGoogle()[pri:0, instance:test.java.LoginTests@77caeb3e]" name="testSearchClickingSearchOnGoogle" duration-ms="60307" started-at="2018-12-31T11:44:04Z" description="Verifies that error is thrown when trying to login with incorrect credentials" finished-at="2018-12-31T11:45:04Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-4C7O5I6', ip: '10.253.150.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: RemoteWebDriver]]>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.className: sdfs (tried for 60 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-4C7O5I6', ip: '10.253.150.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-at baseSetup.DriverMethods.findElementWait(DriverMethods.java:21)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.className: sdfs (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at baseSetup.DriverMethods.findElementWait(DriverMethods.java:19)
 at common.pageObjects.BaseElement.getWebElement(BaseElement.java:20)
 at common.pageObjects.Elements.InputField.inputText(InputField.java:16)
-at test.java.GoogleHomeTest.testSearchClickingSearchOnGoogle(GoogleHomeTest.java:19)
+at test.java.LoginTests.testSearchClickingSearchOnGoogle(LoginTests.java:22)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,17 +53,30 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.className: sdfs
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-4C7O5I6', ip: '10.253.150.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+at java.util.Optional.orElseThrow(Optional.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+... 29 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchClickingSearchOnGoogle -->
-        <test-method status="PASS" signature="terminate()[pri:0, instance:test.java.GoogleHomeTest@31d7b7bf]" name="terminate" is-config="true" duration-ms="720" started-at="2018-11-28T16:19:22Z" finished-at="2018-11-28T16:19:23Z">
+        <test-method status="PASS" signature="terminate()[pri:0, instance:test.java.LoginTests@77caeb3e]" name="terminate" is-config="true" duration-ms="884" started-at="2018-12-31T11:45:04Z" finished-at="2018-12-31T11:45:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-      </class> <!-- test.java.GoogleHomeTest -->
+      </class> <!-- test.java.LoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

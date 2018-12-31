@@ -7,7 +7,6 @@ public class Button extends BaseElement{
 
 	public Button(By by) {
 		super(by);
-		// TODO Auto-generated constructor stub
 	}
 	
 	
